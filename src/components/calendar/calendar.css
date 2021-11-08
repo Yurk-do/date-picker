@@ -1,0 +1,33 @@
+.calendar {
+  margin: 0 auto;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.days-of-week-section,
+.date-section {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.date-section {
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.month-year-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.month-name {
+  padding-right: 10px;
+}
+
+.year-name {
+}
+
+.month-change-button {
+  cursor: pointer;
+}

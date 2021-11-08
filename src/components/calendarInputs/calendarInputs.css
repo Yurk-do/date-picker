@@ -1,0 +1,69 @@
+.main-container-calendar-container {
+  position: relative;
+  min-width: 600px;
+}
+
+.calendar-inputs-container {
+  display: flex;
+  justify-content: column;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.calendar-input-container {
+  max-width: 150px;
+  height: 40px;
+}
+
+.calendar-input {
+  padding: 10px;
+  font-size: 18px;
+  max-width: 130px;
+}
+
+.calendar-input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+.delimiter {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.delimiter > p {
+  text-align: center;
+}
+
+.calendar-input.not-valid {
+  border: 2px solid red;
+}
+
+.error-message-container {
+  width: 300px;
+  position: absolute;
+  margin-bottom: 10px;
+  left: 50%;
+  margin-left: -150px;
+}
+.error-message-container > p {
+  padding: 0;
+  margin: 0;
+  color: red;
+  font-weight: 700;
+}
+
+.button-close-window {
+  padding: 5px;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.button-close-window:hover {
+  transform: scale(1.1, 1.1);
+}

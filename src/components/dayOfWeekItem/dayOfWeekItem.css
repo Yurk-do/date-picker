@@ -1,0 +1,10 @@
+.day-of-week-item {
+  display: flex;
+  justify-content: center;
+}
+
+.day-of-week-item-name {
+  width: 36px;
+  height: 36px;
+  text-align: center;
+}

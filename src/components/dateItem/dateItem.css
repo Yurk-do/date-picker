@@ -1,0 +1,62 @@
+.date-item {
+  display: flex;
+  justify-content: center;
+}
+
+.date-item-button-container {
+  width: 40px;
+  height: 40px;
+}
+
+.date-item-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.date-item-button.active {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.range-days-active {
+  background-color: rgb(43, 132, 233);
+  color: white;
+}
+
+.date-item-button.start-day-active {
+  border-radius: 50%;
+  background-color: rgb(27, 70, 139);
+  color: white;
+}
+
+.date-item-button.last-range-day-active {
+  border-radius: 50%;
+  background-color: rgb(27, 70, 139);
+  color: white;
+}
+
+.start-range-day-active {
+  background: linear-gradient(to right, transparent 50%, rgb(43, 132, 233));
+}
+
+.last-range-day-active {
+  background: linear-gradient(to left, transparent 50%, rgb(43, 132, 233));
+}
+
+.date-item > .date-item-button-container > .date-item-button.other-month {
+  color: grey;
+}
+
+.date-item.range-days-active
+  > .date-item-button-container
+  > .date-item-button.other-month,
+.date-item.last-range-day-active
+  > .date-item-button-container
+  > .date-item-button.last-range-day-active.other-month,  
+.date-item.start-range-day-active
+  > .date-item-button-container
+  > .date-item-button.start-day-active.other-month {
+  color: white;
+}
